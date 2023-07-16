@@ -1,0 +1,56 @@
+.task-actions__btn {
+	position: relative;
+	background-color: transparent;
+}
+
+.task-actions__btn span {
+	display: none;
+}
+
+.task-actions__btn svg {
+	fill: var(--clr-white);
+}
+
+.tooltip {
+	position: absolute;
+	bottom: calc(100% + 1rem);
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 1.4rem;
+	font-weight: 500;
+	background-color: var(--clr-tomato-300);
+	padding: 0.7rem 1rem;
+	border-radius: 0.3rem;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity var(--transition-timing);
+}
+
+.task-actions__btn:hover .tooltip {
+	opacity: 1;
+}
+
+@media screen and (max-width: 500px) {
+	.tooltip {
+		display: none;
+	}
+
+	.task-actions__btn {
+		padding: 0.25rem 1rem;
+		width: 100%;
+		justify-content: flex-start;
+	}
+
+	.task-actions__btn:focus {
+		color: var(--clr-tomato-500);
+		font-weight: 500;
+	}
+
+	.task-actions__btn svg {
+		display: none;
+	}
+
+	.task-actions__btn span {
+		display: block;
+	}
+}

@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+	--clr-tomato-300: #fdc6c3;
+	--clr-tomato-400: #fba9a4;
+	--clr-tomato-500: #f97068;
+	--clr-success: #155724;
+	--clr-success-bg: #d4edda;
+	--clr-danger: #9d1c24;
+	--clr-danger-bg: #f8d7da;
+	--clr-white: #fff;
+	--clr-dark: #333;
+	--clr-white-200: #f7f7f9;
+	--clr-warning: #f2b605;
+
+	--clr-secondary: #f9a568;
+
+	--clr-body-bg: var(--clr-white-200);
+	--clr-body: (--clr-dark);
+
+	--transition-timing: 300ms;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: Roboto, Arial, sans-serif;
+	line-height: 1.5;
+	background-color: var(--clr-body-bg);
+	min-height: 100vh;
+	color: var(--clr-body);
+	position: relative;
+	padding: 1rem;
+}

@@ -1,0 +1,9 @@
+.task-list {
+	margin: 3rem 0;
+	gap: 1.5rem;
+}
+
+.task-list__info {
+	text-align: center;
+	color: var(--clr-tomato-500);
+}

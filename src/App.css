@@ -1,0 +1,114 @@
+body {
+	font-size: 1.6rem;
+	font-family: Roboto;
+}
+
+input {
+	border: 1px solid;
+}
+
+input:focus {
+	outline: none;
+}
+
+.flex {
+	display: flex;
+}
+
+.align-ic {
+	align-items: center;
+}
+
+.justify-cc {
+	justify-content: center;
+}
+
+.justify-btw {
+	justify-content: space-between;
+}
+
+.round-6 {
+	border-radius: 0.6rem;
+}
+
+/* buttons */
+.btn {
+	cursor: pointer;
+	display: inline-block;
+	text-transform: capitalize;
+	color: inherit;
+	white-space: nowrap;
+	border-style: solid;
+	border-width: 0px;
+}
+
+.btn--primary {
+	font-weight: 500;
+	color: var(--clr-white);
+	padding: 1.2rem 2.4rem;
+	background-color: var(--clr-tomato-500);
+}
+
+.btn--icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.icon {
+	--dimen: 2.4rem;
+
+	width: var(--dimen);
+	height: var(--dimen);
+}
+
+.underline-slider {
+	position: relative;
+}
+
+.underline-slider::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: var(--clr-tomato-500);
+	height: 2px;
+	width: 100%;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform var(--transition-timing);
+}
+
+.underline-slider:hover::after {
+	transform: scaleX(1);
+	transform-origin: left;
+}
+
+.grid {
+	display: grid;
+}
+
+main {
+	max-width: 500px;
+	width: 90%;
+	margin: 0 auto;
+	background-color: var(--clr-white);
+	min-height: 100vh;
+	margin-top: 8rem;
+	border-radius: 2.8rem;
+	padding: 2rem 1rem;
+}
+
+h1 {
+	font-size: 5rem;
+	color: var(--clr-tomato-500);
+	font-weight: 700;
+	text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+	main {
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+}

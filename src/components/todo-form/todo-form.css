@@ -1,0 +1,19 @@
+.todo-form-wrapper {
+	margin-top: 4rem;
+	padding: 2rem 0;
+}
+
+.todo-form {
+	height: 50px;
+	gap: 1rem;
+}
+
+.todo-form__input {
+	flex: 1;
+	padding: 0.8rem 1.5rem;
+	border-width: 2px;
+	color: var(--clr-dark);
+	border-color: var(--clr-tomato-500);
+	font-size: 1.5rem;
+	width: 0;
+}
